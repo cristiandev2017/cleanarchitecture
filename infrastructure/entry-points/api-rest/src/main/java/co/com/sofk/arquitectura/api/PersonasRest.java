@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping(value = "/api", produces = MediaType.APPLICATION_JSON_VALUE)
 @AllArgsConstructor
-public class ApiRest {
+public class PersonasRest {
 //    private final MyUseCase useCase;
 
 

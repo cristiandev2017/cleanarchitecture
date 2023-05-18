@@ -8,5 +8,5 @@ public interface PersonaRepository {
 
     Flux<Persona> buscarPersonas();
     Mono <Persona> crearPersona(Persona persona);
-    Mono<Persona> buscarPersona(Integer id);
+    Mono<Persona> buscarPersonaPorId(Integer id);
 }

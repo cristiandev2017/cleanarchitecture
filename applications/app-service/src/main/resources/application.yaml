@@ -16,7 +16,7 @@ spring:
   main:
     allow-bean-definition-overriding: true
   datasource:
-    url: "jdbc:postgresql://localhost:5432/agencia_viajes?currentSchema=agencia_viajes"
+    url: "jdbc:postgresql://localhost:5432/agencia_viajes"
     username: "postgres"
     password: "sofka1234"
     driverClassName: "org.postgresql.Driver"

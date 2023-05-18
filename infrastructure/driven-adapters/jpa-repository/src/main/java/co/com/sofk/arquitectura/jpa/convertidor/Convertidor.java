@@ -11,6 +11,7 @@ import java.util.stream.Collectors;
 public class Convertidor {
 
     private Convertidor(){
+        throw new IllegalStateException("Utility class");
     }
 
     public static Viaje convertirViajeDataAViaje(ViajeData data){

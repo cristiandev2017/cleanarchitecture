@@ -15,11 +15,6 @@ import reactor.core.publisher.Mono;
 @RequestMapping(value = "/api", produces = MediaType.APPLICATION_JSON_VALUE)
 public class PersonasRest {
     private final PersonaUseCase personaUseCase;
-//    @GetMapping(path = "/path")
-//    public String commandName() {
-////      return useCase.doAction();
-//        return "Hello World";
-//    }
 
     @GetMapping("/personas")
     public Flux <Persona> buscarPersonasParaViajar(){
@@ -36,5 +31,9 @@ public class PersonasRest {
         return personaUseCase.guardarPersona(persona);
     }
 
+    @GetMapping("/buscar-por-comando")
+    public Mono<String> buscarPersonasPorComando(){
+        return personaUseCase.buscarPersonasPorComando();
+    }
 
 }
